@@ -26,12 +26,20 @@
                       </ion-button>
                   </div>
                   <div>
-                      <ion-button (click)="onLoginGoogle()" expand="block" size="large" color="danger">
-                          GOOGLE
+                    <ion-row>
+                      <ion-button (click)="onLoginGoogle()" expand="block" color="danger" size="large">
+                          <ion-icon name="logo-google"></ion-icon>
                       </ion-button>
-                      <ion-button (click)="onLoginGit()" expand="block" size="large" color="danger">
-                          Git Hub
+                      <ion-button (click)="onLoginGit()" expand="block" color="danger" size="large">
+                        <ion-icon name="logo-github"></ion-icon>
                       </ion-button>
+                      <ion-button (click)="onLoginTwitter()" expand="block" color="danger" size="large">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </ion-button>
+                    <ion-button (click)="onLoginFacebook()" expand="block" color="danger" size="large">
+                      <ion-icon name="logo-facebook"></ion-icon>
+                    </ion-button>
+                  </ion-row>
                   </div>
                   <div>
                       <a routerLink="/register">¡No tienes cuenta!</a>
